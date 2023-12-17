@@ -1,0 +1,52 @@
+body {
+    background-color: #C3DBC5;
+    font-family : sans-serif;
+    margin : 0;
+    padding : 32px;
+}
+
+.container {
+    background-color: white;
+    padding : 10px;
+    border-radius: 10px;
+    margin-bottom : 90px;
+}
+
+.bottom-nav-bears {
+    position : fixed; 
+    bottom : 16px;
+    margin : auto;
+    left : 0;
+    right : 0;
+    text-align : center;
+}
+
+.bottom-nav-bears ul {
+    list-style: none; /*removes the bulletpoints*/
+    padding : 0;
+    margin : 0 32px;
+    font-size : 0;
+    background-color: white;
+    border-radius: 20px;
+    border: 10px black;
+    padding : 0; 
+    display : inline-block;
+}
+
+.bottom-nav-bears ul li{
+    display : inline; /*changing display style */
+    padding : 0;
+    margin : 0;
+}
+
+.bottom-nav-bears ul li a{
+    display : inline-block;
+    line-height : 30px;
+    background-color: pink;
+    padding: 0 8px;
+    text-decoration: none;
+    border-radius : 15px;
+    font-size : 18px;
+    margin : 4px 5px;
+    color : purple;
+}
