@@ -4,9 +4,7 @@ I think what I want to do is:
 
 Holy shit nav bears 
 
-I want to do a more comprehensive portal, that has an identifying icon or section that leads to that page. 
-
-For right now let's just get a good nav bear sort of on the bottom half of the page
+I want to do a more comprehensive portal, that has an identifying icon or section that leads to that page.  
 
 Example Ideas:
 A cute bear image that when clicked leads to the page for cute bear pictures. 
@@ -28,3 +26,4 @@ This one would be a little emo in theme, leaning more into purple :3c Basically 
 I think we could go cutesy, but maybe green/frog/etc and I would like to post information about things i'm working on and pictures 
 
 ![alt text]( "Logo Title Text 1")
+

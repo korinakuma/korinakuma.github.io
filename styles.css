@@ -48,5 +48,38 @@ body {
     border-radius : 15px;
     font-size : 18px;
     margin : 4px 5px;
-    color : purple;
+    color : black;
 }
+
+.bears-lucky, 
+.bottom-nav-bears ul li a.bears-lucky {
+    background-color : #C3DBC5;
+} 
+
+.bears-cheer, 
+.bottom-nav-bears ul li a.bears-cheer {
+    background-color : pink;
+}
+
+body.bears-tenderheart {
+    background-image : url("images/orange_gingham.jpg")
+}
+
+.bears-tenderheart, 
+.bottom-nav-bears ul li a.bears-tenderheart {
+    background-color : orange;
+}
+.bears-funshine, 
+.bottom-nav-bears ul li a.bears-funshine {
+    background-color : yellow;
+}
+.bears-bedtime, 
+.bottom-nav-bears ul li a.bears-bedtime {
+    background-color : lightblue;
+}
+
+.bears-share, 
+.bottom-nav-bears ul li a.bears-share {
+    background-color : lavender;
+}
+
