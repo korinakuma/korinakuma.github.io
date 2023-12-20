@@ -9,7 +9,6 @@ body {
     background-color: white;
     padding : 10px;
     border-radius: 10px;
-    margin-bottom : 90px;
 }
 
 .bottom-nav-bears {
@@ -67,11 +66,11 @@ body.bears-tenderheart {
 
 .bears-tenderheart, 
 .bottom-nav-bears ul li a.bears-tenderheart {
-    background-color : orange;
+    background-color : rgb(248, 207, 129);
 }
 .bears-funshine, 
 .bottom-nav-bears ul li a.bears-funshine {
-    background-color : yellow;
+    background-color : rgb(255, 255, 116);
 }
 .bears-bedtime, 
 .bottom-nav-bears ul li a.bears-bedtime {
@@ -83,3 +82,38 @@ body.bears-tenderheart {
     background-color : lavender;
 }
 
+.boxeydoodledoo {
+    display : flex;
+    margin-bottom: 90px;
+    margin : auto;
+}
+
+@media (min-width: 640px) {
+    .boxeydoodledoo {
+        max-width: 512px;
+    }
+}
+
+@media (min-width: 960px) {
+    .boxeydoodledoo {
+        max-width: 720px;
+    }
+}
+  
+
+.left-side-bar {
+    padding: 10px;
+    border-radius: 15px;
+    background-color: white;
+    width : 20%;
+    margin: 0 5px;
+    color : purple;
+}
+
+.right-side-bar {
+    padding: 10px;
+    border-radius: 15px;
+    background-color: white;
+    width : 20%;
+    margin: 0 5px;
+}
