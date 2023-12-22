@@ -117,3 +117,11 @@ body.bears-tenderheart {
     width : 20%;
     margin: 0 5px;
 }
+
+body.bears-cheer {
+    background-image: url("/images/cheer_bear_and_cloud.png");
+}
+
+body.bears-bedtime {
+    background-image: url("/images/blue-page-bg.jpg");
+}
