@@ -41,7 +41,7 @@ body {
 .bottom-nav-bears ul li a{
     display : inline-block;
     line-height : 30px;
-    background-color: pink;
+    background-color: #ffd1e8;
     padding: 0 8px;
     text-decoration: none;
     border-radius : 15px;
@@ -57,7 +57,7 @@ body {
 
 .bears-cheer, 
 .bottom-nav-bears ul li a.bears-cheer {
-    background-color : pink;
+    background-color : #ffd1e8;
 }
 
 body.bears-tenderheart {
