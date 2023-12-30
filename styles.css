@@ -1,91 +1,95 @@
 body {
     background-color: #C3DBC5;
-    font-family : sans-serif;
-    margin : 0;
-    padding : 32px;
+    font-family: sans-serif;
+    margin: 0;
+    padding: 32px;
 }
 
 .container {
     background-color: white;
-    padding : 10px;
+    padding: 10px;
     border-radius: 10px;
 }
 
 .bottom-nav-bears {
-    position : fixed; 
-    bottom : 16px;
-    margin : auto;
-    left : 0;
-    right : 0;
-    text-align : center;
+    position: fixed;
+    bottom: 16px;
+    margin: auto;
+    left: 0;
+    right: 0;
+    text-align: center;
 }
 
 .bottom-nav-bears ul {
-    list-style: none; /*removes the bulletpoints*/
-    padding : 0;
-    margin : 0 32px;
-    font-size : 0;
+    list-style: none;
+    /*removes the bulletpoints*/
+    padding: 0;
+    margin: 0 32px;
+    font-size: 0;
     background-color: white;
     border-radius: 20px;
     border: 10px black;
-    padding : 0; 
-    display : inline-block;
+    padding: 0;
+    display: inline-block;
 }
 
-.bottom-nav-bears ul li{
-    display : inline; /*changing display style */
-    padding : 0;
-    margin : 0;
+.bottom-nav-bears ul li {
+    display: inline;
+    /*changing display style */
+    padding: 0;
+    margin: 0;
 }
 
-.bottom-nav-bears ul li a{
-    display : inline-block;
-    line-height : 30px;
+.bottom-nav-bears ul li a {
+    display: inline-block;
+    line-height: 30px;
     background-color: #ffd1e8;
     padding: 0 8px;
     text-decoration: none;
-    border-radius : 15px;
-    font-size : 18px;
-    margin : 4px 5px;
-    color : black;
+    border-radius: 15px;
+    font-size: 18px;
+    margin: 4px 5px;
+    color: black;
 }
 
-.bears-lucky, 
+.bears-lucky,
 .bottom-nav-bears ul li a.bears-lucky {
-    background-color : #C3DBC5;
-} 
+    background-color: #C3DBC5;
+}
 
-.bears-cheer, 
+.bears-cheer,
 .bottom-nav-bears ul li a.bears-cheer {
-    background-color : #ffd1e8;
+    background-color: #ffd1e8;
 }
 
 body.bears-tenderheart {
-    background-image : url("images/orange_gingham.jpg")
+    background-image: url("images/orange_gingham.jpg")
 }
 
-.bears-tenderheart, 
+.bears-tenderheart,
 .bottom-nav-bears ul li a.bears-tenderheart {
-    background-color : rgb(248, 207, 129);
-}
-.bears-funshine, 
-.bottom-nav-bears ul li a.bears-funshine {
-    background-color : rgb(255, 255, 116);
-}
-.bears-bedtime, 
-.bottom-nav-bears ul li a.bears-bedtime {
-    background-color : lightblue;
+    background-color: rgb(248, 207, 129);
 }
 
-.bears-share, 
+.bears-funshine,
+.bottom-nav-bears ul li a.bears-funshine {
+    background-color: rgb(255, 255, 116);
+}
+
+.bears-bedtime,
+.bottom-nav-bears ul li a.bears-bedtime {
+    background-color: lightblue;
+}
+
+.bears-share,
 .bottom-nav-bears ul li a.bears-share {
-    background-color : lavender;
+    background-color: lavender;
 }
 
 .boxeydoodledoo {
-    display : flex;
+    display: flex;
     margin-bottom: 90px;
-    margin : auto;
+    margin: auto;
 }
 
 @media (min-width: 640px) {
@@ -99,22 +103,22 @@ body.bears-tenderheart {
         max-width: 720px;
     }
 }
-  
+
 
 .left-side-bar {
     padding: 10px;
     border-radius: 15px;
     background-color: white;
-    width : 20%;
+    width: 20%;
     margin: 0 5px;
-    color : purple;
+    color: purple;
 }
 
 .right-side-bar {
     padding: 10px;
     border-radius: 15px;
     background-color: white;
-    width : 20%;
+    width: 20%;
     margin: 0 5px;
 }
 
@@ -124,4 +128,21 @@ body.bears-cheer {
 
 body.bears-bedtime {
     background-image: url("/images/blue-page-bg.jpg");
+}
+
+#astro-output h1 {
+    text-align: center;
+}
+#astro-output h1#GummyBear {
+    text-shadow: 
+        -4px 4px #ef3550,
+        -8px 8px #f48fb1,
+        -12px 12px #7e57c2,
+        -16px 16px #2196f3,
+        -20px 20px #26c6da,
+        -24px 24px #43a047,
+        -28px 28px #eeff41,
+        -32px 32px #f9a825,
+        -36px 36px #ff5722;
+    
 }
