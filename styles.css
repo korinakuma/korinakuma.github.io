@@ -66,6 +66,18 @@ body.bears-tenderheart {
     background-image: url("images/orange_gingham.jpg")
 }
 
+body.bears-cheer {
+    background-image: url("/images/cheer_bear_and_cloud.png");
+}
+
+body.bears-bedtime {
+    background-image: url("/images/blue-page-bg.jpg");
+}
+
+body.astro-page {
+    background-image: url("/images/star_background.jpg");
+}
+
 .bears-tenderheart,
 .bottom-nav-bears ul li a.bears-tenderheart {
     background-color: rgb(248, 207, 129);
@@ -122,14 +134,6 @@ body.bears-tenderheart {
     margin: 0 5px;
 }
 
-body.bears-cheer {
-    background-image: url("/images/cheer_bear_and_cloud.png");
-}
-
-body.bears-bedtime {
-    background-image: url("/images/blue-page-bg.jpg");
-}
-
 #astro-output h1 {
     text-align: center;
 }
@@ -146,3 +150,4 @@ body.bears-bedtime {
         -36px 36px #ff5722;
     
 }
+
