@@ -15,17 +15,29 @@ document.body.appendChild(petBox);
 var petSpriteIndex = 0;
 var petRotation = 0;
 
-var makeStylesForPet = function () {
+
+var makeStylesForSprite = function (config) {
     return `
     position: fixed;
     top: -${halfImageSize}px;
     left: -${halfImageSize}px;
-    transform: translate(100px, calc(100vh - 100px)) rotate(${petRotation}rad) scale(0.3);
+    transform: translate(${config.position.x}px, calc(100vh + ${config.position.y}px)) rotate(${config.rotation}rad) scale(0.3);
     width: ${petImageSize}px;
     height: ${petImageSize}px;
     background-image: url("images/cupid_bear_spritesheet.png");
-    background-position: 0px ${petSpriteIndex * -petImageSize}px;
+    background-position: 0px ${config.spriteIndex * -petImageSize}px;
     `;
+}
+
+var makeStylesForPet = function () {
+    return makeStylesForSprite({
+        position: {
+            x : 100,
+            y : -100,
+        },
+        rotation : petRotation,
+        spriteIndex: petSpriteIndex
+    })
 }
 
 var renderPet = function () {
@@ -63,10 +75,51 @@ var handleMouseMove = function (mouseMoveEvent) {
     */
 }
 
+var arrows = [];
+
+var renderArrow = function (arrow) {
+    arrow.domNode.style = makeStylesForSprite(arrow);
+}
+
+var makeArrow = function () {
+    var arrow = {
+        position : {
+            x: 100, 
+            y: -100,
+        },
+        rotation : petRotation,
+        spriteIndex : 2,
+        speed : (0.5 * Math.random()) + 1,
+        domNode : document.createElement('div'),
+    };
+    arrows.push(arrow);
+
+    document.body.appendChild(arrow.domNode);
+    renderArrow(arrow);
+}
+
+var lastTime = 0;
+
+// TODO: Clean up the arrows after they've left the page 
+var tickArrows = function (time) {
+    var delta = time - lastTime;
+    requestAnimationFrame(tickArrows);
+    arrows.forEach(function(arrow) {
+        var xMotion = Math.cos(arrow.rotation) * (delta * arrow.speed);
+        var yMotion = Math.sin(arrow.rotation) * (delta * arrow.speed);
+        arrow.position.x += xMotion;
+        arrow.position.y += yMotion;
+        renderArrow(arrow);
+    }); 
+    lastTime = time;
+}
+requestAnimationFrame(tickArrows);
+
 var handleMouseClick = function (mouseClickEvent) {
     // console.log('what is mouse click event?', mouseClickEvent)
     petSpriteIndex = 1;
     renderPet();
+    makeArrow();
     setTimeout(function () {
         petSpriteIndex = 0;
         renderPet();
