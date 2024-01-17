@@ -73,7 +73,8 @@ var handleMouseClick = function (mouseClickEvent) {
     }, 1000)
 }
 
-document.body.addEventListener('mousemove', handleMouseMove);
-document.body.addEventListener('click', handleMouseClick);
+// We added the event listeners to the document instead of the body. 
+document.addEventListener('mousemove', handleMouseMove); 
+document.addEventListener('click', handleMouseClick);
 
 renderPet(0);
