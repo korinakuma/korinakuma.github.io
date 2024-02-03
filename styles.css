@@ -158,13 +158,33 @@ body.astro-page {
     background-color: rgb(98, 14, 187);
     border-radius: 12px;
     display: flex;
+    width: fit-content;
 }
 
-.text-side,
-.music-side {
-    margin: auto;
-    width: 45%;
+.text-side{
+    color: rgb(42, 2, 94);
+    margin: auto 25px;
+    width: 12rem;
     height: 352px;
     background-color: white;
     border-radius: 12px;
+}
+
+.music-side {
+    color: rgb(42, 2, 94);
+    margin: auto 25px;
+    width: 30rem;
+    height: 352px;
+    background-color: white;
+    border-radius: 12px;
+}
+
+#carina-music,
+#rook-music {
+
+}
+
+.text-side p {
+    padding: 10px;
+    margin: 0;
 }
