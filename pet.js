@@ -89,7 +89,7 @@ var makeArrow = function () {
         },
         rotation : petRotation,
         spriteIndex : 2,
-        speed : (0.5 * Math.random()) + 1,
+        speed : (0.125 * Math.random()) + 0.25,
         domNode : document.createElement('div'),
     };
     arrows.push(arrow);
