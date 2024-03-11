@@ -1,6 +1,6 @@
-var form = document.getElementById("astro-form");
-var date = document.getElementById("astro-date");
-var output = document.getElementById("astro-output");
+var form = document.getElementById("astro-form"); // The form
+var date = document.getElementById("astro-date"); // Form field, the input for the date
+var output = document.getElementById("astro-output"); // The div it outputs to
 
 function zodiac(day, month) {
     // returns the zodiac sign according to day and month ( https://coursesweb.net/ )
