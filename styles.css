@@ -11,6 +11,10 @@ body {
     border-radius: 10px;
 }
 
+.container + .container {
+    margin-top: 10px;
+}
+
 .bottom-nav-bears {
     position: fixed;
     bottom: 16px;
@@ -98,20 +102,26 @@ body.astro-page {
     background-color: rgb(173, 155, 232);
 }
 
-.boxeydoodledoo {
+.flex-container-parent {
     display: flex;
-    margin-bottom: 90px;
+}
+
+.flex-container-parent,
+.block-container-parent {
     margin: auto;
+    margin-bottom: 38px;
 }
 
 @media (min-width: 640px) {
-    .boxeydoodledoo {
+    .flex-container-parent,
+    .block-container-parent {
         max-width: 512px;
     }
 }
 
 @media (min-width: 960px) {
-    .boxeydoodledoo {
+    .flex-container-parent,
+    .block-container-parent {
         max-width: 720px;
     }
 }
@@ -120,7 +130,7 @@ body.astro-page {
 .left-side-bar {
     padding: 10px;
     border-radius: 15px;
-    background-color: white;
+    background-color: #bcf;
     width: 20%;
     margin: 0 5px;
     color: purple;
@@ -129,7 +139,7 @@ body.astro-page {
 .right-side-bar {
     padding: 10px;
     border-radius: 15px;
-    background-color: white;
+    background-color: pink;
     width: 20%;
     margin: 0 5px;
 }
@@ -155,7 +165,7 @@ body.astro-page {
 .music-segment{
     margin: auto;
     height: 400px;
-    background-color: rgb(98, 14, 187);
+    background-color: rgb(32, 4, 62);
     border-radius: 12px;
     display: flex;
     width: fit-content;
@@ -179,12 +189,30 @@ body.astro-page {
     border-radius: 12px;
 }
 
-#carina-music,
-#rook-music {
-
-}
-
 .text-side p {
     padding: 10px;
     margin: 0;
+}
+
+.bear-pic,
+#bear-pic {
+    height : 512px; 
+    width : 256px;
+}
+
+.marquee {
+    background-color: white;
+    
+}
+
+.ibuprofen-canvas {
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+#info {
+    padding: 32px 0;
+    width: auto;
+    position: relative;
 }
