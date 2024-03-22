@@ -14,15 +14,19 @@ let camera, scene, renderer;
 
 let pill;
 
+const pills = [];
+window.pills = pills;
+
 const pillDistance = 2.0;
 const halfPillDistance = pillDistance/2;
+const pillDepthModifier = 0.1;
 
 const clonePillToRandomLocation = function() {
     if (pill) {
         const clonedPill = pill.clone();
         clonedPill.position.set(
             -halfPillDistance + (Math.random()*pillDistance),
-            -halfPillDistance + (Math.random()*pillDistance),
+            -halfPillDistance*pillDepthModifier + (Math.random()*pillDistance*pillDepthModifier),
             -halfPillDistance + (Math.random()*pillDistance)
         );
         clonedPill.rotation.set(
@@ -31,6 +35,7 @@ const clonePillToRandomLocation = function() {
             Math.random()*tau,
         );
         scene.add(clonedPill);
+        pills.push(clonedPill);
         render();
     };
 };
@@ -96,13 +101,15 @@ function init() {
 
         gltf.scene.scale.setScalar(10);
 
-        scene.add( gltf.scene );
-
         pill = gltf.scene;
         window.pill = pill;
-
+        clonePillToRandomLocation();
+        clonePillToRandomLocation();
+        clonePillToRandomLocation();
+        clonePillToRandomLocation();
+        clonePillToRandomLocation();
+        clonePillToRandomLocation();
         render();
-
     } );
 /*
     const controls = new OrbitControls( camera, renderer.domElement );
@@ -134,4 +141,17 @@ function render() {
     renderer.render( scene, camera );
 
 }
+let lastTime = 0;
+const pillRotationSpeed = 2;
 
+const animationFrameHandler = function(now) {
+    const delta = (now - lastTime)/1000;
+    requestAnimationFrame(animationFrameHandler);
+    //console.log('what is delta?', delta);
+    pills.forEach(function(pill){
+        pill.rotation.z += pillRotationSpeed*delta;
+    })
+    render();
+    lastTime = now;
+}
+requestAnimationFrame(animationFrameHandler);
