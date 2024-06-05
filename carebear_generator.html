@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carebear Generator</title>
+    <style>
+        #bear-holder {
+            position: relative;
+            background-color: white;
+            width: 512px;
+            height: 512px;
+            border: 1px solid black;
+        }
+        #bear-holder img {
+            display: block;
+        }
+        #bear-holder #color-overlay {
+            display : block;
+            width: 512px;
+            height: 512px;
+            position: absolute;
+            top: 0;
+            left: 0;
+            background-color: #ff0080;
+            mix-blend-mode: screen;
+        }
+        #bear-holder span {
+            display : block;
+            line-height: 96px;
+            font-size: 96px;
+            width: 160px;
+            position: absolute;
+            text-align: center;
+            top: 296px;
+            left: 176px;
+        }
+    </style>
+</head>
+<body>
+    <div class="content">
+        <h1>Carebear Generator</h1>
+        <div id="bear-holder">
+            <img src="./bear_template.png">
+            <span id="color-overlay"></span>
+            <span id="symbol-holder">❤️</span>
+        </div>
+        <div>
+            <form>
+                <div>
+                    <label>
+                        <span>Color</span>
+                        <input 
+                            type="color" 
+                            id="input-color" 
+                            value="#ff0080"
+                        />
+                    </label>
+                </div>
+                <div>
+                    <label>
+                        <span>Symbol</span>
+                        <input 
+                            type="text" 
+                            id="input-symbol"
+                            value="❤️"   
+                        />
+                    </label>
+                </div>
+            </form>
+        </div>
+    </div>
+    <script src="carebear_generator.js"></script>
+</body>
+</html>

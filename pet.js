@@ -1,3 +1,5 @@
+// TODO: Write script to get rid of arrow divs after a certain amount of time? 
+
 var tau = Math.PI*2;
 var petBox = document.createElement('div');
 var petDubug = document.createElement('pre');
@@ -131,3 +133,5 @@ document.addEventListener('mousemove', handleMouseMove);
 document.addEventListener('click', handleMouseClick);
 
 renderPet(0);
+
+

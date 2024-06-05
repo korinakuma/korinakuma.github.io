@@ -3,12 +3,19 @@ body {
     font-family: sans-serif;
     margin: 0;
     padding: 32px;
+    box-sizing: border-box;
 }
 
 .container {
     background-color: white;
     padding: 10px;
     border-radius: 10px;
+}
+.cheer-bear .container {
+    background-color: white;
+    padding: 10px;
+    border-radius: 10px;
+    
 }
 
 .container + .container {
