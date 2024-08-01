@@ -1,0 +1,13 @@
+.bottom-nav-bears .paws {
+    height:250px;
+    display: block;
+    content: "";
+    background-image: url('images/cat_paws_closed.png');
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.bottom-nav-bears .paws:hover {
+    background-image: url('images/cat_paws_open.png');
+
+}
