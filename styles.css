@@ -4,6 +4,12 @@ body {
     margin: 0;
     padding: 32px;
     box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+}
+
+#holder {
+    display: flex;
 }
 
 .container {
@@ -11,15 +17,42 @@ body {
     padding: 10px;
     border-radius: 10px;
 }
-.cheer-bear .container {
+
+.bears-cheer #container {
     background-color: white;
     padding: 10px;
+    border: 2px solid lightskyblue;
     border-radius: 10px;
-    
+    width: 75%;
+    height: auto;
 }
 
-.container + .container {
-    margin-top: 10px;
+.bears-cheer #about {
+    background-color: white;
+    padding: 10px;
+    border: 2px solid lightskyblue;
+    border-radius: 10px;
+    width: 20%;
+    height: auto;
+    margin-right: 20px;
+}
+
+#title {
+    text-align: center;
+    background-color: white;
+    padding: 10px;
+    border: 2px solid lightskyblue;
+    border-radius: 10px;
+    width: 75%;
+    height: auto;
+    margin-bottom:10px;
+}
+
+#title span{
+    color: #EFBCD5;
+    text-shadow: 2px 2px 2px #8661C1;
+    font-size: 64px;
+    font-family: Brush Script MT;
 }
 
 .bottom-nav-bears {
