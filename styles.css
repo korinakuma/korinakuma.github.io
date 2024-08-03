@@ -10,6 +10,7 @@ body {
 
 #holder {
     display: flex;
+    margin: auto;
 }
 
 .container {
@@ -32,19 +33,20 @@ body {
     padding: 10px;
     border: 2px solid lightskyblue;
     border-radius: 10px;
-    width: 20%;
-    height: auto;
+    width: 25%;
+    height: fit-content;
     margin-right: 20px;
 }
 
 #title {
     text-align: center;
-    background-color: white;
+    background-color: rgb(256, 256, 256, .5);
     padding: 10px;
     border: 2px solid lightskyblue;
     border-radius: 10px;
-    width: 75%;
+    width: fit-content;
     height: auto;
+    margin: auto;
     margin-bottom:10px;
 }
 
@@ -53,6 +55,8 @@ body {
     text-shadow: 2px 2px 2px #8661C1;
     font-size: 64px;
     font-family: Brush Script MT;
+    position: relative;
+    bottom: 20px;
 }
 
 .bottom-nav-bears {
@@ -240,10 +244,6 @@ body.astro-page {
     width : 256px;
 }
 
-.marquee {
-    background-color: white;
-    
-}
 
 .ibuprofen-canvas {
     position: fixed;
