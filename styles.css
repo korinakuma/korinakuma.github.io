@@ -111,19 +111,19 @@ body {
 }
 
 body.bears-tenderheart {
-    background-image: url("images/orange_gingham.jpg")
+    background-image: url("images/decor/orange_gingham.jpg")
 }
 
 body.bears-cheer {
-    background-image: url("/images/cheer_bear_and_cloud.png");
+    background-image: url("/images/decor/cheer_bear_and_cloud.png");
 }
 
 body.bears-bedtime {
-    background-image: url("/images/blue-page-bg.jpg");
+    background-image: url("/images/decor/blue-page-bg.jpg");
 }
 
 body.astro-page {
-    background-image: url("/images/star_background.jpg");
+    background-image: url("/images/decor/star_background.jpg");
 }
 
 .bears-tenderheart,

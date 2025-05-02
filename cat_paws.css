@@ -2,12 +2,12 @@
     height:100px;
     display: block;
     content: "";
-    background-image: url('images/cat_paws_closed.png');
+    background-image: url('images/decor/cat_paws_closed.png');
     background-repeat: no-repeat;
     background-position: bottom;
     background-size: 150px;
 }
 
 .bottom-nav-bears .paws:hover {
-    background-image: url('images/cat_paws_open.png');
+    background-image: url('images/decor/cat_paws_open.png');
 }
