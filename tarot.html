@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carina's Cozy Cloud</title>
+    <link href="styles.css" rel="stylesheet" />
+    <link href="cat_paws.css" rel="stylesheet" />
+</head>
+<body class="bears-cheer">
+    <div id="title">
+        <img src="/images/decor/pixel_moon.gif" style="height: 100px;position: relative;top: 10px;"> <span>Comfy x Cozy</span> <img src="/images/decor/pixel_moon_flipped.gif" style="height: 100px;position: relative;top: 10px;">
+    </div>
+    <div id="holder">
+        <div id="about">
+            <h1>About</h1>
+            <p>Hi there! Welcome to my site!</p>
+            <p>This is a combination of a portfolio and a radioactive testing site. My passions include programming, web design, game-making, Blender, astrology, fashion, puppies, and anything within the concept of 'pink and cute'. </p>
+            <p>Stay a while! Check out my projects page, visit a shrine, and maybe sign the guestbook while you're here? Enjoy your stay!</p>
+            <br>
+            <marquee>
+                <img src="images/decor/stamps-gir_dance.gif">
+                <img src="images/decor/carefree_bear.png">
+                <img src="images/decor/stamps-carebear_vroom_vroom.gif">
+                <img src="images/decor/stamp_template.png">
+            </marquee>
+        </div>
+        <div id="container">         
+            <article>   
+                <div>
+                    <button id="draw-card-button">
+                        Draw a card!
+                    </button>    
+                </div>
+                <div id="output"></div>
+                <script>
+const buttonElement = document.getElementById('draw-card-button');
+const outputElement = document.getElementById('output');
+const updateOutput = (data) => {
+    const {name, description, image} = data;
+    outputElement.innerHTML = /*html*/ `
+    <h1>${name}</h1>
+    <p>${description}</p>
+    <div>
+        <img 
+            src="https://carinas-tarot-deck.glitch.me${image}"
+            style="max-width: 100%;"
+        >
+    </div>
+    `
+}
+const getCard = () => {
+    fetch('https://carinas-tarot-deck.glitch.me/cards/onecard')
+        .then((response) => {
+            return response.json();
+        })
+        .then(updateOutput);
+}
+//getCard();
+buttonElement.addEventListener('click', getCard);
+                </script>
+            </article>
+        </div>
+        <img src="images/decor/cheer_bear_with_stars_tall_flipped.png" width="25%">
+    </div>
+    <div id="index-nav-bears" class="bottom-nav-bears">
+        <div class="paws"></div>
+        <nav>
+            <ul>
+                <li><a href="/index.html" class="bears-cheer">Home</a></li>
+                <li><a href="/blog.html" class="bears-tenderheart">Blog</a></li>
+                <li><a href="/projects.html" class="bears-funshine">Projects</a></li>
+                <li><a href="/bears.html" class="bears-lucky">Bears</a></li>
+                <li><a href="/dogs.html" class="bears-bedtime">Dog Page</a></li>
+                <li><a href="/music.html" class="bears-share">Music</a></li>
+            </ul>
+        </nav>
+    </div>
+    <script src="pet.js"></script>
+</body>
+</html>
