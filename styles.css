@@ -3,6 +3,14 @@ body {
     font-family: sans-serif;
     margin: 0;
     padding: 32px;
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+}
+
+#holder {
+    display: flex;
+    margin: auto;
 }
 
 .container {
@@ -11,8 +19,44 @@ body {
     border-radius: 10px;
 }
 
-.container + .container {
-    margin-top: 10px;
+.bears-cheer #container {
+    background-color: white;
+    padding: 10px;
+    border: 2px solid lightskyblue;
+    border-radius: 10px;
+    width: 75%;
+    height: auto;
+}
+
+.bears-cheer #about {
+    background-color: white;
+    padding: 10px;
+    border: 2px solid lightskyblue;
+    border-radius: 10px;
+    width: 25%;
+    height: fit-content;
+    margin-right: 20px;
+}
+
+#title {
+    text-align: center;
+    background-color: rgb(256, 256, 256, .5);
+    padding: 10px;
+    border: 2px solid lightskyblue;
+    border-radius: 10px;
+    width: fit-content;
+    height: auto;
+    margin: auto;
+    margin-bottom:10px;
+}
+
+#title span{
+    color: #EFBCD5;
+    text-shadow: 2px 2px 2px #8661C1;
+    font-size: 64px;
+    font-family: Brush Script MT;
+    position: relative;
+    bottom: 20px;
 }
 
 .bottom-nav-bears {
@@ -67,19 +111,19 @@ body {
 }
 
 body.bears-tenderheart {
-    background-image: url("images/orange_gingham.jpg")
+    background-image: url("images/decor/orange_gingham.jpg")
 }
 
 body.bears-cheer {
-    background-image: url("/images/cheer_bear_and_cloud.png");
+    background-image: url("/images/decor/cheer_bear_and_cloud.png");
 }
 
 body.bears-bedtime {
-    background-image: url("/images/blue-page-bg.jpg");
+    background-image: url("/images/decor/blue-page-bg.jpg");
 }
 
 body.astro-page {
-    background-image: url("/images/star_background.jpg");
+    background-image: url("/images/decor/star_background.jpg");
 }
 
 .bears-tenderheart,
@@ -200,10 +244,6 @@ body.astro-page {
     width : 256px;
 }
 
-.marquee {
-    background-color: white;
-    
-}
 
 .ibuprofen-canvas {
     position: fixed;

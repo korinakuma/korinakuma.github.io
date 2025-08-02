@@ -26,14 +26,39 @@
             </marquee>
         </div>
         <div id="container">         
-            <article>
-                <h2>DEFCON32: My First Hackercamp!</h2>
-                <h5>August 27, 2024</h5>
-
-            </article>
-            <article>
-                <h2>Making of the Carebear Generator</h2>
-                <h5>August 27, 2024</h5>
+            <article>   
+                <div>
+                    <button id="draw-card-button">
+                        Draw a card!
+                    </button>    
+                </div>
+                <div id="output"></div>
+                <script>
+const buttonElement = document.getElementById('draw-card-button');
+const outputElement = document.getElementById('output');
+const updateOutput = (data) => {
+    const {name, description, image} = data;
+    outputElement.innerHTML = /*html*/ `
+    <h1>${name}</h1>
+    <p>${description}</p>
+    <div>
+        <img 
+            src="https://carinas-tarot-deck.glitch.me${image}"
+            style="max-width: 100%;"
+        >
+    </div>
+    `
+}
+const getCard = () => {
+    fetch('https://carinas-tarot-deck.glitch.me/cards/onecard')
+        .then((response) => {
+            return response.json();
+        })
+        .then(updateOutput);
+}
+//getCard();
+buttonElement.addEventListener('click', getCard);
+                </script>
             </article>
         </div>
         <img src="images/decor/cheer_bear_with_stars_tall_flipped.png" width="25%">
