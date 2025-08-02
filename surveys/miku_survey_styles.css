@@ -1,0 +1,59 @@
+html {
+    height: 100%;
+  }
+  
+  body {
+    box-sizing: border-box;
+    padding: 32px;
+    margin: 0;
+    height: 100%;
+    background-image: linear-gradient(
+        115deg,
+        rgba(155, 255, 238, 0.8),
+        rgba(155, 255, 238, 0.7)
+      ),
+      url(https://images7.alphacoders.com/715/thumb-1920-715038.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  
+  .header {
+    margin: 5px auto;
+    width: auto;
+    max-width: 500px;
+    height: 100px;
+    padding: 5px;
+    background-image: linear-gradient(
+        115deg,
+        rgba(255, 225, 243, 0.9),
+        rgba(255, 225, 243, 0.8)
+    );
+    border: solid 2px white;
+  }
+  
+  .form-box {
+    margin: 5px auto;
+    width: auto;
+    max-width: 500px;
+    height: auto;
+    background-image: linear-gradient(
+        115deg,
+        rgba(255, 225, 243, 0.9),
+        rgba(255, 225, 243, 0.8)
+    );
+    padding: 5px;
+    border: solid 2px white;
+  }
+  
+  .basic-info {
+    display: block;
+  }
+  
+  .checkbox-labels {
+    display: inline;
+  }
+  
+  .submit {
+    
+  }

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Vocaloid Survey Form</title>
+    <link rel="stylesheet" href="miku_survey_styles.css">
+  </head>
+  <body>
+    <div class="header">
+    <h1 id="title" class="title">Vocaloid Survey Form </h1>
+    <p id="description" class="description">Tell me about your favorite vocaloids!</p>
+    </div>
+    <div id="main" class="form-box">
+      <form id="survey-form" class="survey-form">
+        <label for="name" id="name-label">Name: </label><input placeholder="Name" class="basic-info" id="name" type="text" required>
+        <label for="email" id="email-label">Email: <input placeholder="Email" class="basic-info" id="email" type="email" required></label>
+        <label for="number" id="number-label">How familiar are you with Vocaloid? (1-10):<input placeholder="#" class="basic-info" id="number" type="number" min="1" max="10" required>
+        <label id="select-label">Select your favorite Vocaloid: <select id="dropdown" class="basic-info">
+          <option value="Hatsune-Miku">Hatsune Miku</option>
+          <option value="Megurine-Luka">Megurine Luka</option>
+          <option value="KAITO">KAITO</option>
+          <option value="Kagamine-Rin">Kagamine Rin</option>
+          <option value="Kagamine-Len">Kagamine Len</option>
+          <option value="MEIKO">MEIKO</option>
+          <option value="GUMI">Megpoid Gumi</option>
+          <option value="Gakupo">Gakupo</option>
+        </select>
+        <label>
+          Justify your actions now. 
+          <textarea id="text-area" class="basic-info text-area" placeholder="Now."></textarea>
+        </label>
+        <p class="basic-info" id="radio-options">Do we talk about Miku's brain surgery?</p>
+        <input type="radio" id="yes" value="yes" name="brain-surgery"> <label for="yes"> Yes</label>
+        <input type="radio" id="no" value="no" name="brain-surgery"> <label for="no"> No</label>
+        <p>What is the best thing about Miku? (Select all that apply)</p>
+        <label class="checkbox-labels" for="hair"><input class="checkbox" type="checkbox" id="hair" value="hair"> Her Hair </label><br>
+        <label class="checkbox-labels" for="leek"><input class="checkbox" type="checkbox" id="leek" value="leek"> Her Leeks</label><br>
+        <input class="checkbox" type="checkbox" id="music" value="music"> <label for="music" class="checkbox-labels">Her Music</label><br>
+        <input class="checkbox" type="checkbox" id="love" value="love"> <label for="love" class="checkbox-labels">Her Love</label><br>
+        <br>
+        <input id="submit" type="submit" value="Submit">
+      </form>
+    </div>
+  </body>
+</html>
