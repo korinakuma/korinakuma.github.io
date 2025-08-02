@@ -1,20 +1,20 @@
-
-
 import * as THREE from 'three';
 
 import { RoomEnvironment } from 'three/addons/environments/RoomEnvironment.js';
-import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
 import { GLTFLoader } from 'three/addons/loaders/GLTFLoader.js';
 
 import { KTX2Loader } from 'three/addons/loaders/KTX2Loader.js';
 import { MeshoptDecoder } from 'three/addons/libs/meshopt_decoder.module.js';
 
 const tau = Math.PI*2;
+const deg = Math.PI/180;
+
 let camera, scene, renderer;
 
 let pill;
 
 const pills = [];
+// By attaching the window property, it makes the variable global so we can access it outside of this module to poke at it in the dev tools.
 window.pills = pills;
 
 const pillDistance = 2.0;
@@ -103,12 +103,9 @@ function init() {
 
         pill = gltf.scene;
         window.pill = pill;
-        clonePillToRandomLocation();
-        clonePillToRandomLocation();
-        clonePillToRandomLocation();
-        clonePillToRandomLocation();
-        clonePillToRandomLocation();
-        clonePillToRandomLocation();
+        for (let i = 0; i < 100; i++) {
+            clonePillToRandomLocation();
+        }
         render();
     } );
 /*
