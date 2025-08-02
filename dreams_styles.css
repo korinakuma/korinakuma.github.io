@@ -1,0 +1,28 @@
+.piped_dreams {
+    background-color: pink;
+    padding: 32px;
+}
+
+
+
+#whipped_dreams {
+    box-sizing: border-box;
+    background-color: white;
+    padding: 10px;
+    border: 2px solid lightskyblue;
+    border-radius: 10px;
+    width: 75%;
+    height: auto;
+}
+
+#dreams_title {
+    text-align: center;
+    background-color: rgb(256, 256, 256, .5);
+    padding: 10px;
+    border: 2px solid lightskyblue;
+    border-radius: 10px;
+    width: fit-content;
+    height: auto;
+    margin: auto;
+    margin-bottom:10px;
+}

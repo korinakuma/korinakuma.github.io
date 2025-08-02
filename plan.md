@@ -11,6 +11,9 @@ A cute bear image that when clicked leads to the page for cute bear pictures.
 Maybe a cutesy image of a room, and the items lead to different things? Like old school flash games!!! 
 Clicking on the computer leads to the blog; Clicking the stereo leads to my music, etc? 
 
+## Piped Dreams
+Triple entendre, piped as in high, piped as in whipped cream, and piped as in pipe dream. This would be grand projects that I would love to do, but need a lot more experience to tackle. Example: Creating a controller for PJSK and Groove Coaster on the computer, a full wardrobe of self made clothes, etc; 
+
 ## Blog Page
 A very simple blog page, probably cutesy, with simply laid out article boxes in a nice calming color. 
 
