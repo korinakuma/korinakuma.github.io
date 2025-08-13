@@ -26,7 +26,7 @@ var makeStylesForSprite = function (config) {
     transform: translate(${config.position.x}px, calc(100vh + ${config.position.y}px)) rotate(${config.rotation}rad) scale(0.3);
     width: ${petImageSize}px;
     height: ${petImageSize}px;
-    background-image: url("images/decor/cupid_bear_spritesheet.png");
+    background-image: url("/images/decor/cupid_bear_spritesheet.png");
     background-position: 0px ${config.spriteIndex * -petImageSize}px;
     `;
 }
