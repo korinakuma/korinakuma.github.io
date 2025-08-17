@@ -7,7 +7,7 @@ import { KTX2Loader } from 'three/addons/loaders/KTX2Loader.js';
 import { MeshoptDecoder } from 'three/addons/libs/meshopt_decoder.module.js';
 
 const tau = Math.PI*2;
-
+const deg = Math.PI/180;
 let pill;
 
 const renderer = new THREE.WebGLRenderer( { antialias: true, alpha: true} );
@@ -48,7 +48,7 @@ const ktx2Loader = new KTX2Loader()
     .setTranscoderPath( 'jsm/libs/basis/' )
     .detectSupport( renderer );
 
-const loader = new GLTFLoader().setPath( 'models/' );
+const loader = new GLTFLoader().setPath( '/models/' );
 loader.setKTX2Loader( ktx2Loader );
 loader.setMeshoptDecoder( MeshoptDecoder );
 loader.load( 'ibuprofen.glb', function ( gltf ) {
@@ -81,6 +81,7 @@ window.addEventListener( 'resize', onWindowResize );
 
 
 const pills = [];
+// By attaching the window property, it makes the variable global so we can access it outside of this module to poke at it in the dev tools.
 window.pills = pills;
 
 const pillDistance = 2.0;
