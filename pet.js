@@ -1,8 +1,12 @@
 // TODO: Write script to get rid of arrow divs after a certain amount of time? 
+// getboundingbox function 
 
+// tau is a whole circle in radians. this way we can visualize it easier (tau*.25 = 90deg, tau*.5 = 180deg, so on. East is always 0deg/360deg)
 var tau = Math.PI*2;
+// creating the elements, but NOT ATTACHED to the page yet
 var petBox = document.createElement('div');
 var petDubug = document.createElement('pre');
+// width of the image that we're working with; is used for our sprite position offsets
 var petImageSize = 512;
 var halfImageSize = petImageSize/2;
 document.body.appendChild(petDubug);
@@ -13,10 +17,6 @@ petDubug.style = `
     `;
 
 document.body.appendChild(petBox);
-
-var petSpriteIndex = 0;
-var petRotation = 0;
-
 
 var makeStylesForSprite = function (config) {
     return `
@@ -30,6 +30,9 @@ var makeStylesForSprite = function (config) {
     background-position: 0px ${config.spriteIndex * -petImageSize}px;
     `;
 }
+
+var petSpriteIndex = 0;
+var petRotation = 0;
 
 var makeStylesForPet = function () {
     return makeStylesForSprite({
