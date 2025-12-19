@@ -2,6 +2,7 @@ const snowflakeImages = [
     'images/snowflakes/snowflake_00.png',
     'images/snowflakes/snowflake_01.png',
     'images/snowflakes/snowflake_02.png',
+    'images/snowflakes/snowflake_03.png',
 ]
 
 const snowflakeDiameter = 64;
@@ -34,9 +35,6 @@ const makeSnowflake = () => {
     div.x = window.innerWidth * Math.random();
     div.y = window.innerHeight * Math.random();
     div.rotation = div.spin * 180;
-    div.style.left = `${div.x}px`;
-    div.style.top = `${div.y}px`;
-    div.style.transform = `rotate(${div.rotation}deg)`;
     document.body.appendChild(div);
     snowflakes.push(div);
 }
@@ -54,9 +52,7 @@ const tickSnowflakes = (time) => {
         if (div.y + snowflakeDiameter > window.innerHeight + snowflakeDiameter) {
             div.y = -snowflakeDiameter;
         } 
-        div.style.left = `${div.x}px`;
-        div.style.top = `${div.y}px`;
-        div.style.transform = `rotate(${div.rotation}deg)`;
+        div.style.transform = `rotate(${div.rotation}deg) translate3d(${div.x}px, ${div.y}px, 0)`;
     })
 }
 
